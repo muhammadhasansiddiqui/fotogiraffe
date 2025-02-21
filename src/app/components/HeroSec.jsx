@@ -9,18 +9,19 @@ function HeroSec() {
     ">
       {/* Left Side - Text Content */}
       <div className="max-w-2xl w-full lg:w-1/2">
-        <h1 className="text-6xl sm:text-4xl lg:text-5xl font-bold  text-black leading-tight">
-          Where Memories Come Alive
-        </h1>
-        <p className="italic text-gray-600 my-3 text-sm sm:text-base">
+      <h1 className="font-cabin font-bold text-black text-5xl tracking-tight mb-4 lg:text-6xl">
+  Where Memories Come Alive
+</h1>
+
+        <p className=" mt-5 text-xl font-[var(--font-primary)] text-gray-600 italic">
           ~ FotoGiraffe's Video Photo Books ~
         </p>
-        <p className="text-gray-700 text-sm sm:text-base">
+        <p className=" pt-5 text-gray-600 max-w-[540px]">
           Turn your memories into a beautifully printed album with scannable QR
           codes that bring your videos to life. Simply upload, customize, and
           order—your interactive album is on its way!
         </p>
-        <p className="text-gray-700 mt-2 text-sm sm:text-base">
+        <p className="text-gray-700 mt-4 text-sm sm:text-base">
           Creating amazing video books for as little as <strong>£17.99</strong>!
         </p>
 
