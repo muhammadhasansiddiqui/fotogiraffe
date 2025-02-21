@@ -15,7 +15,7 @@ function MainSteps() {
         <div className="relative mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
             {/* Step 1 */}
-            <div className="relative bg-[#FEF7F0]">
+            <div className="relative  ">
               <div
                 className="absolute -right-8 w-[72%] z-10 top-10 hidden lg:block"
                 style={{ transform: "translateY(-20%)" }}
@@ -38,7 +38,7 @@ function MainSteps() {
                   style={{ color: "transparent" }}
                   src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/images/landing/style.svg"
                 />
-                <h3 className="text-l  font-semibold text-black">
+                <h3 className="text-xl text-left font-medium text-black">
                   Choose a book style
                 </h3>
                 <p className="text-gray-600 text-left text-[14px]">
@@ -49,7 +49,7 @@ function MainSteps() {
             </div>
 
             {/* Step 2 */}
-            <div className="relative bg-gradient-to-br from-[#F6CA9E29] to-[#F6CA9E29]">
+            <div className="relative">
               <div
                 className="absolute -right-10 w-[67%] top-3 z-10 hidden lg:block"
                 style={{ transform: "translateY(80%)" }}
@@ -63,8 +63,8 @@ function MainSteps() {
                 />
               </div>
 
-              <div className="bg-blue-100  py-12 px-16 h-full flex flex-col gap-4">
-                <h3 className="text-l  font-semibold text-black">
+              <div className="bg-gradient-to-br from-[#ACE5FD29] to-[#ACE5FD29] py-12 px-16 h-full flex flex-col gap-4">
+                <h3 className="text-xl text-left font-medium text-black">
                   Upload your media
                 </h3>
                 <p className="text-gray-600 text-left text-[14px]">
@@ -90,9 +90,9 @@ function MainSteps() {
 
             {/* Step 3 */}
 
-            <div className="relative bg-[#FFFDED]">
+            <div className="relative">
               <div
-                className="absolute -right-8 w-[72%] z-10 top-10 hidden lg:block"
+                className=" absolute -right-8 w-[72%] z-10 top-10 hidden lg:block"
                 style={{ transform: "translateY(-20%)" }}
               >
                 <img
@@ -102,7 +102,7 @@ function MainSteps() {
                 />
               </div>
 
-              <div className="bg-gradient-to-br from-[#F6CA9E29] to-[#F6CA9E29] py-12 px-16 h-full flex flex-col gap-4">
+              <div className="bg-gradient-to-br from-[#FDF18B29] to-[#FDF18B29] py-12 px-16 h-full flex flex-col gap-4">
                 <img
                   alt="book"
                   loading="lazy"
@@ -113,7 +113,7 @@ function MainSteps() {
                   style={{ color: "transparent" }}
                   src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/images/landing/book.svg"
                 />
-                <h3 className="text-l  font-semibold text-black">
+                <h3 className="text-xl text-left font-medium text-black">
                   Generate photo book
                 </h3>
                 <p className="text-gray-600 text-left text-[14px]">
@@ -124,9 +124,9 @@ function MainSteps() {
             </div>
 
             {/* Step 4 */}
-            <div className="relative bg-[#F1FBEF]">
-              <div className="bg-green-100 rounded-r-2xl py-12 px-16 h-full flex flex-col gap-4">
-                <h3 className="text-l font-semibold text-black">
+            <div className="relative ">
+              <div className="bg-gradient-to-br from-[#ABE69E29] to-[#ABE69E29]  rounded-r-2xl py-12  px-16 h-full flex flex-col gap-4">
+                <h3 className="text-xl font-medium text-left text-black">
                   Review and purchase
                 </h3>
                 <p className="text-gray-600 text-left text-[14px]">
