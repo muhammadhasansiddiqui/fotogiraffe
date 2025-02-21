@@ -37,7 +37,7 @@ function QA() {
   return (
     <div className="py-16">
       <div className="container px-4 mx-auto">
-        <h2 className="text-4xl text-black font-semibold md:text-[56px] mb-4 cabin-font">
+        <h2 className="text-4xl font-medium md:text-[56px] mb-4 text-black font-cabin">
           Got Questions? We've Got Answers!
         </h2>
         <p className="text-gray-600 mt-6 text-[18px] mb-12">
@@ -45,7 +45,7 @@ function QA() {
         </p>
 
         {/* FAQ List */}
-        <div className="cabin-font">
+        <div className="font-cabin ">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

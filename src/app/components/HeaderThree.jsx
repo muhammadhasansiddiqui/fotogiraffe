@@ -19,7 +19,9 @@ const HeaderThree = () => {
     <div className="bg-[#F8F7F3] flex flex-col items-center pt-9 p-5 py-16">
       {/* Header */}
       <header className="text-center mt-8">
-        <h1 className="text-[56px] cabin-font text-5xl  text-black font-semibold
+        <h1 className="
+
+        text-[56px] font-cabin  font-medium text-black
         ">
           We have variety of books!  🤩
         </h1>
@@ -28,21 +30,23 @@ const HeaderThree = () => {
       </header>
 
       {/* Size Selection Buttons */}
-      <div className="flex space-x-3 flex-wrap justify-center my-8">
-        {["Large", "Medium", "Small"].map((size) => (
-          <button
-            key={size}
-            onClick={() => setSelectedSize(size)}
-            className={`px-8 py-2 text-[18px] transition-colors rounded-lg ${
-              selectedSize === size
-                ? "bg-[#70FAC3] text-black"
-                : "bg-gray-300 text-black"
-            } duration-300`}
-          >
-            {size}
-          </button>
-        ))}
-      </div>
+      <div className="flex flex-wrap justify-center my-8">
+  {["Large", "Medium", "Small"].map((size, index, array) => (
+    <button
+      key={size}
+      onClick={() => setSelectedSize(size)}
+      className={`px-8 py-2 text-[18px] transition-colors rounded-none ${
+        selectedSize === size ? "bg-[#70FAC3] text-black" : "bg-gray-300 text-black"
+      } duration-300 
+      ${index === 0 ? "rounded-l-lg" : ""}   /* Left border-radius for first button */
+      ${index === array.length - 1 ? "rounded-r-lg" : ""} /* Right border-radius for last button */
+      `}
+    >
+      {size}
+    </button>
+  ))}
+</div>
+
 
       <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm text-gray-600">
         <span className="flex items-center gap-2">

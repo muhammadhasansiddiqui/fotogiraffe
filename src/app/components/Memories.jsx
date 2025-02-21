@@ -20,7 +20,7 @@ const Memories = () => {
   return (
     <section className="py-16 bg-[#F8F7F3]">
       <div className="container px-4 mx-auto">
-        <h2 className="text-4xl text-black font-medium mb-8 cabin-font md:text-[56px]">
+        <h2 className="text-4xl text-black font-medium mb-8 font-cabin md:text-[56px]">
           Themes for all your favorite memories 😱
         </h2>
         <ThemeSelector

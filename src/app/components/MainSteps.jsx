@@ -3,9 +3,9 @@ import { Upload, FileText, ShoppingBag } from "lucide-react";
 
 function MainSteps() {
   return (
-    <div className="container px-4 py-40 overflow-hidden mx-auto">
-      <div className="flex flex-col text-center p-8">
-        <h2 className=" text-black text-[54px] flex justify-start cabin-font font-bold mb-16">
+    <div className="py-40 overflow-hidden">
+      <div className="container px-4 mx-auto">
+        <h2 className=" text-black text-[56px] font-cabin text-left font-medium  mb-16">
           Get your photo book in 4 easy steps{" "}
           <span role="img" aria-label="emoji">
             😮
