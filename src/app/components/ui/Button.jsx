@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Component } from "lucide-react";
 
 const Button = ({ text, onClick, className }) => {
   return (

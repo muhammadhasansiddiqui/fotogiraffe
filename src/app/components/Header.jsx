@@ -7,7 +7,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b">
+    <nav className=" border-b">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Logo />
         
@@ -42,7 +42,7 @@ function Header() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-base font-medium text-black bg-yellow-200 rounded-sm md:bg-transparent md:p-0"
+                className="block py-2  px-3 text-base font-medium text-black bg-yellow-200 rounded-sm md:bg-transparent md:p-0"
                 aria-current="page"
               >
                 Home
@@ -53,7 +53,7 @@ function Header() {
                 id="dropdownNavbarLink"
                 className="flex items-center justify-between text-base font-medium w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-[500px] md:p-0 md:w-auto"
               >
-                Dropdown{" "}
+                Photo books{" "}
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"
@@ -76,7 +76,8 @@ function Header() {
                 href="#"
                 className="block py-2 px-3 text-base font-medium text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-[500px] md:p-0"
               >
-                Services
+               
+FAQs
               </a>
             </li>
           </ul>
