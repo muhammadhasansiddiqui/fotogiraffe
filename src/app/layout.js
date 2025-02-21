@@ -1,3 +1,5 @@
+// import "flowbite/dist/flowbite.css";
+import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopDeal from "./components/TopDeal";
