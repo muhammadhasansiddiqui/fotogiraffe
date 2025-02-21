@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import Button from "./ui/Button";
 
 function HeroSec() {
   return (
@@ -22,47 +23,42 @@ function HeroSec() {
         </p>
 
         {/* Button */}
-        <div className="flex justify-center lg:justify-start">
-          <button className="mt-6 flex items-center gap-2 bg-[#70FAC3] hover:bg-[#55bd94] text-black font-semibold px-5 py-3 rounded-lg shadow-md transition">
-            Start your album <ArrowUpRight size={18} />
-          </button>
-        </div>
+<Button text="Start your album" className="mt-6" />
+
+       
       </div>
 
       {/* Right Side - Images */}
       <div className="relative flex flex-col gap-4 mt-10 lg:mt-0 lg:w-1/2 w-full items-center">
-  {/* Background Decorative Square */}
-  <div className="absolute top-0 left-10 bg-[#70FAC333] rounded-lg p-4 w-[160px] h-[230px] md:w-[160px] md:h-[230px] z-50"></div>
+        {/* Background Decorative Square */}
+        <div className="absolute top-0 left-10 bg-[#70FAC333] rounded-lg p-4 w-[160px] h-[230px] md:w-[160px] md:h-[230px] z-50"></div>
 
-  {/* Images Grid */}
-  <div className="grid grid-cols-2 gap-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg relative">
-    {/* Image 1 (Main Large Image) */}
-    <div className="col-span-2 flex justify-end">
-      <img
-        src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_2.png&w=384&q=75"
-        alt="Photo Album"
-        className="w-[350px] h-[350px] rounded-lg shadow-lg"
-      />
-    </div>
+        {/* Images Grid */}
+        <div className="grid grid-cols-2 gap-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg relative">
+          {/* Image 1 (Main Large Image) */}
+          <div className="col-span-2 flex justify-end">
+            <img
+              src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_2.png&w=384&q=75"
+              alt="Photo Album"
+              className="w-[350px] h-[350px] rounded-lg shadow-lg"
+            />
+          </div>
 
-    {/* Image 2 (Happy Moments) */}
-    <img
-      src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_1.png&w=256&q=75"
-      alt="Happy Moments"
-      className="w-[250px] h-[250px] relative -top-16  rounded-lg shadow-lg"
-    />
+          {/* Image 2 (Happy Moments) */}
+          <img
+            src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_1.png&w=256&q=75"
+            alt="Happy Moments"
+            className="w-[250px] h-[250px] relative -top-16  rounded-lg shadow-lg"
+          />
 
-    {/* Image 3 (Couple Photo) - Move Above */}
-    <img
-      src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_3.png&w=256&q=75"
-      alt="Couple Photo"
-      className="w-[250px] h-[165px] rounded-lg shadow-lg "
-    />
-</div>
-
-</div>
-
-
+          {/* Image 3 (Couple Photo) - Move Above */}
+          <img
+            src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/_next/image?url=%2Fimages%2Flanding%2Fframe_3.png&w=256&q=75"
+            alt="Couple Photo"
+            className="w-[250px] h-[165px] rounded-lg shadow-lg "
+          />
+        </div>
+      </div>
     </section>
   );
 }

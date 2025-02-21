@@ -4,6 +4,13 @@ import TopDeal from "./components/TopDeal";
 import Header from "./components/Header";
 import HeroSec from "./components/HeroSec";
 import FeatureHeader from "./components/FeatureHeader";
+import HeaderThree from "./components/HeaderThree";
+import MainSteps from "./components/MainSteps";
+import Memories from "./components/Memories";
+import QA from "./components/QA";
+import Footer from "./components/Footer";
+import { ModalFooter } from "flowbite-react";
+import Review from "./components/Review";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,13 +31,29 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* {children} */}
+        {/* 1 */}
         <TopDeal />
+        {/* 2 */}
         <Header />
+        {/* 3 */}
         <HeroSec />
-        <FeatureHeader/>
+        {/* 4 */}
+        <FeatureHeader />
+        {/* 5 */}
+        <HeaderThree />
+        {/* 6 */}
+        <MainSteps />
+        {/* 7 */}
+        <Memories />
+        {/* 8 */}
+        <Review />
+        {/* 9 */}
+        <QA />
+        {/* 10 */}
+        <Footer />
       </body>
     </html>
   );

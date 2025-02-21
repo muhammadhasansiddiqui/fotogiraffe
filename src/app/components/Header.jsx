@@ -1,20 +1,13 @@
 import React from "react";
+import Logo from "./ui/Logo";
+import Button from "./ui/Button";
 
 function Header() {
   return (
     <div>
       <nav className="bg-white border-b">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="#"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/images/landing/logo_black.svg"
-              className="h-10 w-auto"
-              alt="fotogiraff Logo"
-            />
-          </a>
+          <Logo />
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
@@ -90,21 +83,19 @@ function Header() {
             <div className="flex space-x-4 ml-4 items-center">
               <a
                 href="#"
-                className="px-4 py-2 text-black   hover:bg-black hover:text-white transition flex items-center space-x-2"
+                className="px-4 py-2 text-black hover:bg-black hover:text-white transition flex items-center space-x-2"
               >
                 <img
                   src="https://fotogiraffe-test-git-rebuild-hashamdevs-projects.vercel.app/images/landing/user.svg"
                   alt="User Icon"
                   className="w-5 h-5"
                 />
-                <span className="font-[500px]">Sign In</span>
+                <span className="font-medium">Sign In</span>
               </a>
-              <a
-                href="#"
-                className="px-4 py-2 text-black font-[500px] bg-[#70FAC3]  border-black  border-2 border-b-4  rounded-md hover:bg-[#53bf94] transition"
-              >
-                Get Started
-              </a>
+              <Button
+                text="Get Started"
+                className="text-black bg-[#70FAC3] border-black border-2 border-b-4 hover:bg-[#53bf94]"
+              />
             </div>
           </div>
         </div>
