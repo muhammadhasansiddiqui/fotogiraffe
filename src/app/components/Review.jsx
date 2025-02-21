@@ -58,9 +58,9 @@ function Review() {
   }, [startIndex]);
 
   return (
-    <div className="py-10 overflow-hidden">
+    <div className="py-16 overflow-hidden">
       <div className="container px-4 mt-10 mx-auto">
-        <div className="text-black text-2xl flex flex-col relative p-10">
+        <div className="text-black text-2xl flex flex-col relative ">
           <div className="mb-5">
             <h2 className="text-5xl font-bold mb-4">
               What our clients think about us? ⭐
