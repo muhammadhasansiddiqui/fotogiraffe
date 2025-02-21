@@ -3,7 +3,7 @@ import { Upload, FileText, ShoppingBag } from "lucide-react";
 
 function MainSteps() {
   return (
-    <div className="container px-4 mx-auto">
+    <div className="container px-4 py-40 mx-auto">
       <div className="flex flex-col text-center p-8">
         <h2 className=" text-black text-[54px] flex justify-start cabin-font font-bold mb-16">
           Get your photo book in 4 easy steps{" "}
@@ -15,7 +15,7 @@ function MainSteps() {
         <div className="relative mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
             {/* Step 1 */}
-            <div className="relative">
+            <div className="relative bg-[#FEF7F0]">
               <div
                 className="absolute -right-8 w-[72%] z-10 top-10 hidden lg:block"
                 style={{ transform: "translateY(-20%)" }}
@@ -49,7 +49,7 @@ function MainSteps() {
             </div>
 
             {/* Step 2 */}
-            <div className="relative">
+            <div className="relative bg-gradient-to-br from-[#F6CA9E29] to-[#F6CA9E29]">
               <div
                 className="absolute -right-10 w-[67%] top-3 z-10 hidden lg:block"
                 style={{ transform: "translateY(80%)" }}
@@ -90,7 +90,7 @@ function MainSteps() {
 
             {/* Step 3 */}
 
-            <div className="relative">
+            <div className="relative bg-[#FFFDED]">
               <div
                 className="absolute -right-8 w-[72%] z-10 top-10 hidden lg:block"
                 style={{ transform: "translateY(-20%)" }}
@@ -102,7 +102,7 @@ function MainSteps() {
                 />
               </div>
 
-              <div className="bg-gradient-to-br from-[#F6CA9E29] to-[#F6CA9E29] rounded-l-2xl py-12 px-16 h-full flex flex-col gap-4">
+              <div className="bg-gradient-to-br from-[#F6CA9E29] to-[#F6CA9E29] py-12 px-16 h-full flex flex-col gap-4">
                 <img
                   alt="book"
                   loading="lazy"
@@ -124,7 +124,7 @@ function MainSteps() {
             </div>
 
             {/* Step 4 */}
-            <div className="relative">
+            <div className="relative bg-[#F1FBEF]">
               <div className="bg-green-100 rounded-r-2xl py-12 px-16 h-full flex flex-col gap-4">
                 <h3 className="text-l font-semibold text-black">
                   Review and purchase

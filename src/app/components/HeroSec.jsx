@@ -4,7 +4,7 @@ import Button from "./ui/Button";
 
 function HeroSec() {
   return (
-    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-4  pt-16 pb-20  ">
+    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-4  pt-17 pb-20  ">
       {/* Left Side - Text Content */}
       <div className="max-w-2xl w-full lg:w-1/2">
         <h1 className="text-6xl sm:text-4xl lg:text-5xl font-bold  text-black leading-tight">

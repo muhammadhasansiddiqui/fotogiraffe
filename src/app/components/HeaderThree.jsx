@@ -16,14 +16,14 @@ const HeaderThree = () => {
   const [selectedSize, setSelectedSize] = useState("Large");
 
   return (
-    <div className="bg-gray-100 flex flex-col items-center pt-9 p-5">
+    <div className="bg-[#F8F7F3] flex flex-col items-center pt-9 p-5 py-16">
       {/* Header */}
-      <header className="text-center">
+      <header className="text-center mt-8">
         <h1 className="text-[56px] cabin-font text-5xl  text-black font-semibold
         ">
           We have variety of books!  🤩
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-600 mt-5">
         We have different sizes, covers and shapes to preserve your memories        </p>
       </header>
 
