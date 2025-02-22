@@ -2,14 +2,18 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  Keyboard,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import FramerIMG from "../../images/frame.jpg";
-
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import Button from "./ui/Button";
 
 const HeaderThree = () => {
@@ -19,34 +23,42 @@ const HeaderThree = () => {
     <div className="bg-[#F8F7F3] flex flex-col items-center pt-9 p-5 py-16">
       {/* Header */}
       <header className="text-center mt-8">
-        <h1 className="
+        <h1
+          className="
 
         text-[56px] font-cabin  font-medium text-black
-        ">
-          We have variety of books!  🤩
+        "
+        >
+          We have variety of books! 🤩
         </h1>
         <p className="text-gray-600 mt-5">
-        We have different sizes, covers and shapes to preserve your memories        </p>
+          We have different sizes, covers and shapes to preserve your memories{" "}
+        </p>
       </header>
 
       {/* Size Selection Buttons */}
       <div className="flex flex-wrap justify-center my-8">
-  {["Large", "Medium", "Small"].map((size, index, array) => (
-    <button
-      key={size}
-      onClick={() => setSelectedSize(size)}
-      className={`px-8 py-2 text-[18px] transition-colors rounded-none ${
-        selectedSize === size ? "bg-[#70FAC3] text-black" : "bg-gray-300 text-black"
-      } duration-300 
-      ${index === 0 ? "rounded-l-lg" : ""}   /* Left border-radius for first button */
-      ${index === array.length - 1 ? "rounded-r-lg" : ""} /* Right border-radius for last button */
+        {["Large", "Medium", "Small"].map((size, index, array) => (
+          <button
+            key={size}
+            onClick={() => setSelectedSize(size)}
+            className={`px-8 py-2 text-[18px] transition-colors rounded-none ${
+              selectedSize === size
+                ? "bg-[#70FAC3] text-black"
+                : "bg-gray-300 text-black"
+            } duration-300 
+      ${
+        index === 0 ? "rounded-l-lg" : ""
+      }   /* Left border-radius for first button */
+      ${
+        index === array.length - 1 ? "rounded-r-lg" : ""
+      } /* Right border-radius for last button */
       `}
-    >
-      {size}
-    </button>
-  ))}
-</div>
-
+          >
+            {size}
+          </button>
+        ))}
+      </div>
 
       <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm text-gray-600">
         <span className="flex items-center gap-2">
@@ -110,14 +122,17 @@ const HeaderThree = () => {
 
       {/* Swiper Slider */}
 
+      <div className="relative w-full max-w-4xl mx-auto">
       <Swiper
         cssMode={true}
-        navigation={true}
+        navigation={{
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        }}
         pagination={{ clickable: true }}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="w-full max-w-4xl mb-2 bg-red-600 h-96 shadow-lg rounded-lg overflow-hidden"
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        modules={[Navigation, Pagination, Autoplay]}
+        className="w-full h-96 shadow-lg rounded-lg overflow-hidden"
       >
         {/* Slide 1 */}
         <SwiperSlide className="flex justify-center items-center">
@@ -156,10 +171,45 @@ const HeaderThree = () => {
         </SwiperSlide>
       </Swiper>
 
+      {/* ✅ Custom Navigation Buttons */}
+      <button className="custom-prev absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-chevron-left w-8 h-6"
+        >
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </button>
+
+      <button className="custom-next absolute -right-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-chevron-right w-8 h-6"
+        >
+          <path d="m9 18 6-6-6-6"></path>
+        </svg>
+      </button>
+    </div>
+    
       {/* CTA Button */}
       <div className="text-center mt-6">
-       
-       <Button text="Start your album" />
+        <Button text="Start your album" />
       </div>
     </div>
   );
